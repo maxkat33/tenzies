@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 3em;
+    margin: 0;
+    background-color: #0B2434;
+    font-family: Karla;
+    font-weight: 700;
+
+}
+
+main {
+    height: 40em;
+    max-height: 600px;
+    max-width: 40em;
+    margin: auto auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+}
+
+.title {
+    margin: 0;
+    font-size: 2.4rem;
+    letter-spacing: -0.03em;
+}
+
+.instructions {
+    max-width: 15em;
+    font-family: Inter;
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: -0.03em;
+    color: #4A4E74;
+}
+
+.dice-container {
+    display: grid;
+    grid-template: auto auto / repeat(5, 1fr);
+    gap: 20px;
+}
+
+.die {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2B283A;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.die-num {
+    font-size: 1.75rem;
+}
+
+button {
+    padding: 0.8em 2.4em;
+    font-family: inherit;
+    font-size: 1.2rem;
+    background-color: #5035FF;
+    color: #ffffffdc;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 3.2px 7.68px rgba(0, 0, 0, 0.18);
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover{
+    color: #FFFFFF;
+    background-color: #2a0ee0;
+}
+
+button:active {
+    box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
