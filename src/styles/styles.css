@@ -5,21 +5,23 @@
 body {
     padding: 3em;
     margin: 0;
-    background-color: #0B2434;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: Karla;
     font-weight: 700;
-
+    background-color: #0B2434;
 }
 
 main {
     height: 40em;
-    max-height: 600px;
-    max-width: 40em;
-    margin: auto auto;
+    width: 40em;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    gap: 2.5em;
     background-color: #F5F5F5;
     border-radius: 10px;
 }
@@ -85,4 +87,22 @@ button:hover{
 
 button:active {
     box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+
+.timer {
+    width: 10em;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.15rem;
+    background-color: #FFFFFF;
+    color: #2B283A;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+.timer-digit {
+    width: 2em;
+    text-align: center;
 }
